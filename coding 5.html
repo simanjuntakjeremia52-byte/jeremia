@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Saya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            min-height: 100vh;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .photo-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        .photo {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .photo img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        @media (max-width: 768px) {
+            .photo-row {
+                flex-direction: column;
+                align-items: center;
+            }
+            .photo {
+                max-width: 250px;
+            }
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center p-4">
+    <div class="container max-w-4xl mx-auto">
+        <header class="text-center mb-8">
+            <h1 class="text-4xl font-bold mb-4">Biar Tidak Penasaran</h1>
+            <p class="text-lg">Halo bro bareng kali penasaran, boleh kok dibaca</p>
+        </header>
+
+        <div class="card mb-8">
+            <h2 class="text-2xl font-semibold mb-4 text-center">Inilah gua bro wkwk</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <p><strong>Nama:</strong> Jeremia Simanjuntak</p>
+                    <p><strong>Usia:</strong> 18 Tahun</p>
+                    <p><strong>Pekerjaan:</strong> Mahasiswa</p>
+                    <p><strong>Tempat Tinggal:</strong> Lubuk Pakam</p>
+                </div>
+                <div>
+                    <p><strong>Hobi:</strong> Tidur dan Makan</p>
+                    <p><strong>Keahlian:</strong> Fotografi</p>
+                    <p><strong>Sedang Berkuliah di:</strong> INKES Medistra</p>
+                    <p><strong>Jurusan:</strong> Kesehatan Masyarakat(S1)</p>
+                </div>
+            </div>
+            <p class="mt-4 text-center italic">Kalo masih penasaran langsung dm aja ya di @callmiaaa_</p>
+        </div>
+
+        <div class="card">
+            <h2 class="text-2xl font-semibold mb-4 text-center">Nih muka gua </h2>
+            <div class="photo-row">
+                <div class="photo">
+                    <img src="https://imgur.com/1sqnCYy.png" alt="Foto diri potret formal dengan latar belakang ruangan rumah yang bersih, menggunakan kemeja biru muda dan rambut rapi, ekspresi senyum ramah dengan pencahayaan alami dari jendela" />
+                    <p class="text-center mt-2">Sans ae cuma editan kok wkwk</p>
+                </div>
+                <div class="photo">
+                    <img src="https://imgur.com/4Fkgsov.png" alt="Foto outdoor saat hiking di pegunungan hijau dengan pemandangan pohon tinggi dan langit cerah, memakai jaket olahraga abu-abu, ekspresi antusias dan aktif" />
+                    <p class="text-center mt-2">Saran Caption?</p>
+                </div>
+                <div class="photo">
+                    <img src="https://imgur.com/7l117Cn.png" alt="Foto santai di kafe dengan kopi dan laptop, latar belakang jendela kota ramai, memakai kemeja hijau dan ekspresi fokus sambil bekerja" />
+                    <p class="text-center mt-2">Ditutupin dikit gpp lh ya</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript sederhana untuk animasi bertahap saat load
+        window.addEventListener('load', () => {
+            const cards = document.querySelectorAll('.card');
+            cards.forEach((card, index) => {
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, index * 200);
+            });
+        });
+    </script>
+</body>
+</html>
+</content>
+</create_file>
